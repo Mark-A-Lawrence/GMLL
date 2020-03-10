@@ -1,0 +1,153 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Configure">
+
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="166dp"
+        android:layout_height="136dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginStart="130dp"
+        android:layout_marginLeft="130dp"
+        android:layout_marginTop="136dp"
+        android:layout_marginEnd="115dp"
+        android:layout_marginRight="115dp"
+        android:src="@drawable/gem3" />
+
+    <EditText
+        android:id="@+id/r_email"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/imageView2"
+        android:layout_marginTop="110dp"
+        android:ems="10"
+        android:hint="Email"
+        android:inputType="textEmailAddress"
+        android:visibility="gone" />
+
+    <EditText
+        android:id="@+id/r_emailpass"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/r_email"
+        android:layout_marginTop="49dp"
+        android:ems="10"
+        android:hint="Password"
+        android:inputType="textPassword"
+        android:visibility="gone" />
+
+    <Button
+        android:id="@+id/to2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/r_emailpass"
+        android:layout_marginTop="92dp"
+        android:text="Next"
+        android:visibility="gone" />
+
+    <EditText
+        android:id="@+id/lname"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/fname"
+        android:layout_marginTop="49dp"
+        android:ems="10"
+        android:hint="Last Name"
+        android:inputType="textPersonName"
+        android:visibility="gone" />
+
+    <EditText
+        android:id="@+id/fname"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/imageView2"
+        android:layout_marginTop="110dp"
+        android:ems="10"
+        android:hint="First Name"
+        android:inputType="textPersonName"
+        android:visibility="gone" />
+
+    <Button
+        android:id="@+id/to3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/lname"
+        android:layout_marginTop="92dp"
+        android:text="Next"
+        android:visibility="gone" />
+
+    <EditText
+        android:id="@+id/string_salt"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/imageView2"
+        android:layout_marginTop="110dp"
+        android:ems="10"
+        android:hint="Password"
+        android:inputType="textPassword"
+        android:visibility="gone" />
+
+    <EditText
+        android:id="@+id/num_salt"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/string_salt"
+        android:layout_marginTop="48dp"
+        android:ems="10"
+        android:hint="Pin"
+        android:inputType="numberPassword"
+        android:visibility="gone" />
+
+    <Button
+        android:id="@+id/to4"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/num_salt"
+        android:layout_marginTop="92dp"
+        android:text="Terms and Conditions"
+        android:visibility="gone" />
+
+    <LinearLayout
+        android:id="@+id/terms"
+        android:layout_width="match_parent"
+        android:layout_height="370dp"
+        android:layout_below="@+id/imageView2"
+        android:layout_marginTop="6dp"
+        android:orientation="horizontal"
+        android:visibility="gone">
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/textView2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="I dont really care do wat ever  you want just be legal and im not responsible for any thing done with this software or harm that may come using this software" />
+            </LinearLayout>
+        </ScrollView>
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/saveinfo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/imageView2"
+        android:layout_marginTop="387dp"
+        android:text="I accept and finish"
+        android:visibility="gone" />
+</RelativeLayout>
